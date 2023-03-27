@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="layout">
+        <div id="header">
+            <div id="input">
+                <h1>Add new Item</h1>
+                <div id="inputs">
+                    <label for="newName">Name:</label>
+                    <input id="newName" name="newName" type="text" onload="this.value=''">
+                </div>
+                <div id="inputs">
+                    <label for="newQuantity">Quantity:</label>
+                    <input id="newQuantity" name="newQuantity" type="number">
+                </div>
+                <div id="inputs">
+                    <label for="newCost">Cost:</label>
+                    <input id="newCost" name="newCost" type="number">
+                </div>
+                <div id="inputs">
+                    <label for="newUnit">Unit:</label>
+                    <input id="newUnit" name="newUnit" type="text">
+                </div>
+                <div>
+                    <button id="addNewItem">Add</button>
+                    <button id="updateAll">UpdateAll</button> (Only works sometimes)
+                </div>
+            </div>
+            <div id="stats">
+                <h1>Stats</h1>
+                <table>
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total Items: </td>
+                            <td><span id="numItems"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Total Investment: </td>
+                            <td><span id="totalInvest"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Total Value @CS2 Announcement: </td>
+                            <td><span id="totalStart"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Total Value Today: </td>
+                            <td><span id="totalToday"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="main">
+            <table id="itemTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Investment</th>
+                        <th>Price @CS2 Annoucement</th>
+                        <th>Total</th>
+                        <th>Price Today</th>
+                        <th>Total</th>
+                        <th>Profit</th>
+                        <th>Total Profit</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script defer type="module" src="src/client.js"></script>
+</body>
+</html>

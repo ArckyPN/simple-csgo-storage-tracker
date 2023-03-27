@@ -1,0 +1,58 @@
+body#dark {
+    background-color: black;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+#input {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+table#itemTable tr:nth-child(2n) {
+    background-color: lightgray;
+}
+
+tr:hover td {
+    background-color: lightgreen;
+}
+
+.profit {
+    font-weight: bold;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+.number {
+    float: right;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
