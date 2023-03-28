@@ -13,7 +13,6 @@ function XHRRequest(method: string, url: string, callback: () => void, body?: an
 }
 
 function deleteItem(index: number) {
-    // FIXME 
     let num = prompt("How do you want to delete?");
     if ( num === null ) {
         return;
