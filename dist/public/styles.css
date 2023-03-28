@@ -23,6 +23,12 @@ body#dark {
     grid-template-columns: 1fr 1fr;
 }
 
+#main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1rem;    
+}
+
 table {
     border-collapse: collapse;
 }
