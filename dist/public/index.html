@@ -31,6 +31,7 @@
                 <div>
                     <button id="addNewItem">Add</button>
                     <button id="updateAll">UpdateAll</button> (Only works sometimes)
+                    <button id="editMode">Edit Mode: OFF</button>
                 </div>
             </div>
             <div id="stats">
@@ -61,22 +62,35 @@
             </div>
         </div>
         <div id="main">
-            <table id="itemTable">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Quantity</th>
-                        <th>Investment</th>
-                        <th>Price @CS2 Annoucement</th>
-                        <th>Total</th>
-                        <th>Price Today</th>
-                        <th>Total</th>
-                        <th>Profit</th>
-                        <th>Total Profit</th>
-                    </tr>
-                </thead>
-            </table>
+            <div>
+                <table id="itemTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Investment</th>
+                            <th>Price @CS2 Annoucement</th>
+                            <th>Total</th>
+                            <th>Price Today</th>
+                            <th>Total</th>
+                            <th>Profit</th>
+                            <th>Total Profit</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div>
+                <table id="unitTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Unit</th>
+                            <th>#Items</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
     </div>
     <script defer type="module" src="src/client.js"></script>
